@@ -1,0 +1,53 @@
+body {
+  font-size: 1.24rem;
+  min-height: 100%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#bonkable,
+#bonk-image {
+  cursor: url("/assets/cursor/baseballbat.cur"), default;
+}
+
+#bonk-image {
+  z-index: 101;
+}
+
+#bonk-image:hover {
+  cursor: url("/assets/cursor/baseballbat-bonking.cur"), default;
+}
+
+.chatbot {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.rainbow-active {
+  animation: rainbow 5s ease-in-out infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ff0000;
+  }
+  16% {
+    color: #ff7f00;
+  }
+  33% {
+    color: #ffff00;
+  }
+  50% {
+    color: #00ff00;
+  }
+  66% {
+    color: #0000ff;
+  }
+  83% {
+    color: #4b0082;
+  }
+  100% {
+    color: #8f00ff;
+  }
+}
